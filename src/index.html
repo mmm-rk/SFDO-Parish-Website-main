@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Slider CSS -->
+    <link rel="stylesheet" href="/css/slider.css">
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CALENDAR CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/evo-calendar@1.1.2/evo-calendar/css/evo-calendar.min.css"/>
+
+    <title>IParish</title>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="relative container mx-auto p-6">
+        <!-- Flex Container -->
+        <div class="flex items-center justify-between font-roboto ">
+            <!-- Logo -->
+            <img src="../images/logo.svg" alt="" class="w-16 h-16">
+
+            <!-- NavLinks -->
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="text-red-600">Home</a>
+                <a href="#about" class="hover:text-red-600">About Us</a>
+                <a href="#news" class="hover:text-red-600">News</a>
+                <a href="#gallery" class="hover:text-red-600">Gallery</a>
+                <a href="#parishlife" class="hover:text-red-600">Parish Life</a>
+                <a href="#calendarevents" class="hover:text-red-600">Event Calendar</a>
+            </div>
+
+            <!-- Button -->
+            <a href="#donate" class="hidden p-3 px-6 pt-2.5 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block">Donate</a>
+
+            <!-- Hamburger Icon -->
+            <button id="menu-btn" class="outline-none md:hidden">
+                <svg class="w-6 h-6 text-slate-700 hover:text-red-600 "
+                        x-show="!showMenu"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+            </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <secion id="home">
+        <!-- Flex Container -->
+        <div data-aos="fade-up" data-aos-duration="3000" class="h-[90vh] container flex flex-col-reverse items-center justify-center px-6 mx-auto space-y-0 md:flex-row md:justify-center">
+            <!-- Left Item -->
+            <div class="flex flex-col space-y-2 mt-4 md:mt-0">
+                <h2 class="max-w-md text-4xl text-center font-bold font-ruda md:text-left md:text-5xl">
+                Welcome to St. John the Baptist Parish</h2>
+                <p class="max-w-sm text-sm text-center md:text-left">Join us in worship and community</p>
+                <!-- Flex container for 2 buttons -->
+                <div class="flex flex-row space-x-6 justify-center mt-2 md:justify-start">
+                    <button class="rounded-lg border border-black px-4 py-2 text-sm hover:bg-slate-500 hover:text-white">Learn More</button>
+                    <button class="rounded-lg bg-brightRed px-6 py-2 text-sm text-white hover:bg-brightRedLight">Join Now</button>
+                </div>
+            </div>
+            <!-- Right Item Picture -->
+            <div class="rounded-lg overflow-hidden md:w-1/2 shadow-xl shadow-rose-500/30">
+                <img src="../images/hero-picture.jpg" alt="" class="w-full">
+            </div>
+        </div>
+    </secion>
+
+    <!-- News and Announcements -->
+    <section id="news" class="lg:h-screen">
+        <!-- Header -->
+        <div data-aos="zoom-in-up" data-aos-duration="1500"  class="p-4 py-2 border-t-4 border-t-red-500 shadow-xl">
+            <h2 class="text-center font-bold font-rosario text-[30px] ">NEWS AND ANNOUNCEMENTS</h2>
+        </div>
+
+        <!-- Flex Container -->
+        <div class="container flex flex-col items-center justify-center mx-auto lg:flex-row md:mt-12">
+            <!-- Left Item -->
+            <div class="flex flex-col mt-6 px-4 items-center font-ruda font-bold md:space-y-12">
+                <!-- Mass Details -->
+                <div data-aos="fade-right" data-aos-duration="1000" class="flex flex-col-reverse items-center md:flex-row md:space-x-8">
+                    <div class="border-t-4 border-t-red-news pl-12 pr-10 mt-6 py-8 rounded-xl shadow-xl md:mt-0">
+                        <h3 class="text-4xl">Mass Times</h3>
+                        <ul class="text-lg list-disc pl-6">
+                            <li>SATURDAY: <span class="font-rosario">5:30</span> PM</li>
+                            <li>SUNDAY: <span class="font-rosario">5:30</span> PM</li>
+                            <li>MON-FRI: <span class="font-rosario">5:30</span> PM</li>
+                            <li>MON-SAT: <span class="font-rosario">5:30</span> PM</li>
+                        </ul>
+                    </div>
+                    <!-- Image -->
+                    <div class="md:w-80">
+                        <img src="../images/news-1.svg" alt="">
+                    </div>     
+                </div>
+                <!-- Confession Times -->
+                <div data-aos="fade-right" data-aos-duration="1500" class="flex flex-col items-center mt-6 md:flex-row md:space-x-8 md:mt-0">
+                    <!-- Image -->
+                    <div class="md:w-80">
+                        <img src="../images/news-2.svg" alt="">
+                    </div>
+                    <div class="border-t-4 border-t-red-news pl-12 pr-10 mt-6 py-8 rounded-xl shadow-xl md:mt-0">
+                        <h3 class="text-4xl">Mass Times</h3>
+                        <ul class="text-lg list-disc pl-6">
+                            <li>SATURDAY: <span class="font-rosario">5:30</span> PM</li>
+                            <li>SUNDAY: <span class="font-rosario">5:30</span> PM</li>
+                            <li>MON-FRI: <span class="font-rosario">5:30</span> PM</li>
+                            <li>MON-SAT: <span class="font-rosario">5:30</span> PM</li>
+                        </ul>
+                    </div>     
+                </div>
+            </div>
+
+            <!-- Right Item -->
+            <div class="flex flex-col bg-pinkish-red p-6 space-y-4 mt-4 border-4 border-red-500/70 w-[90%] sm:w-max md:ml-6">
+                <!-- First Card -->
+                <div data-aos="fade-left" data-aos-duration="1500" class="flex flex-row bg-white">
+                    <!-- Schedule -->
+                    <div class="flex font-m-plus-code bg-pinkishDarkRed py-6 items-center">
+                        <h2 class="max-w-vxs font-bold text-2xl text-white text-center">Every Monday</h2>
+                    </div>
+                    <!-- Event title and time -->
+                    <div class="font-marcellus text-sm px-6 py-2">
+                        <h3 class="text-base">BIBLE STUDY</h3>
+                        <p class="text-center mt-4">6:30 PM <br> AT <br> ST.JOHN PARISH</p>
+                    </div>
+                </div>  
+                <!-- First Card -->
+                <div data-aos="fade-left" data-aos-duration="1500" class="flex flex-row bg-white">
+                    <!-- Schedule -->
+                    <div class="flex font-m-plus-code bg-pinkishDarkRed py-6 items-center">
+                        <h2 class="max-w-vxs font-bold text-2xl text-white text-center">Every Monday</h2>
+                    </div>
+                    <!-- Event title and time -->
+                    <div class="font-marcellus text-sm px-6 py-2">
+                        <h3 class="text-base">BIBLE STUDY</h3>
+                        <p class="text-center mt-4">6:30 PM <br> AT <br> ST.JOHN PARISH</p>
+                    </div>
+                </div>  
+                <!-- First Card -->
+                <div data-aos="fade-left" data-aos-duration="1500" class="flex flex-row bg-white">
+                    <!-- Schedule -->
+                    <div class="flex font-m-plus-code bg-pinkishDarkRed py-6 items-center">
+                        <h2 class="max-w-vxs font-bold text-2xl text-white text-center">Every Monday</h2>
+                    </div>
+                    <!-- Event title and time -->
+                    <div class="font-marcellus text-sm px-6 py-2">
+                        <h3 class="text-base">BIBLE STUDY</h3>
+                        <p class="text-center mt-4">6:30 PM <br> AT <br> ST.JOHN PARISH</p>
+                    </div>
+                </div>  
+                <!-- First Card -->
+                <div data-aos="fade-left" data-aos-duration="1500" class="flex flex-row bg-white">
+                    <!-- Schedule -->
+                    <div class="flex font-m-plus-code bg-pinkishDarkRed py-6 items-center">
+                        <h2 class="max-w-vxs font-bold text-2xl text-white text-center">Every Monday</h2>
+                    </div>
+                    <!-- Event title and time -->
+                    <div class="font-marcellus text-sm px-6 py-2">
+                        <h3 class="text-base">BIBLE STUDY</h3>
+                        <p class="text-center mt-4">6:30 PM <br> AT <br> ST.JOHN PARISH</p>
+                    </div>
+                </div>       
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="lg:h-screen mt-6">
+        <!-- Header -->
+        <div data-aos="zoom-in-up" data-aos-duration="1500" class="p-4 py-2 border-t-4 border-t-red-500 shadow-xl">
+            <h2 class="text-center font-bold font-rosario text-[30px] ">MOMENTS WE CHERISH TOGETHER</h2>
+        </div>
+
+        <section data-aos="zoom-in-up" data-aos-duration="1500" id="slider" class="h-screen flex items-center justify-center">
+            <input type="radio" name="slider" id="s1" />
+            <input type="radio" name="slider" id="s2" />
+            <input type="radio" name="slider" id="s3" checked />
+            <input type="radio" name="slider" id="s4" />
+            <input type="radio" name="slider" id="s5" />
+
+            <label for="s1" id="slide1">
+                <img src="../images/img1.jpg" height="100%" width="100%" />
+            </label>
+
+            <label for="s2" id="slide2">
+                <img src="../images/img2.jpg" height="100%" width="100%" />
+            </label>
+
+            <label for="s3" id="slide3">
+                <img src="../images/img3.jpg" height="100%" width="100%" />
+            </label>
+
+            <label for="s4" id="slide4">
+                <img src="../images/img4.jpg" height="100%" width="100%" />
+            </label>
+
+            <label for="s5" id="slide5">
+                <img src="../images/img5.jpg" height="100%" width="100%" />
+            </label>
+        </section>
+    </section>
+
+    <!-- Discover Parish Life -->
+    <section id="parishlife" class="lg:mt-0 mt-4">
+        <div data-aos="zoom-in-up" data-aos-duration="1500" class="p-4 py-2 border-t-4 border-t-red-500 shadow-xl">
+            <h2 class="text-center font-bold font-rosario text-[30px] ">DISCOVER OUR PARISH LIFE</h2>
+        </div>
+        <div data-aos="fade-right" data-aos-duration="1000" class="flex justify-center items-center h-full">
+            <div class="mt-6 mx-auto grid lg:grid-cols-2 place-items-center">
+                <div class="md:w-80">
+                    <img src="/images/discover.png" alt="">
+                </div> 
+                <div data-aos="fade-left" class="flex flex-col justify-center mx-2 mt-4 p-4 shadow-xl border-t-4 border-red-500 space-y-2 md:w-[600px] md:px-12">
+                    <h3 class="font-ruda text-3xl">START LIVING LIFE</h3>
+                    <p class="font-roboto text-sm">In the picturesque town of San Fernando, a thriving community has embraced the importance of living a purposeful life. The townspeople, influenced by their rich religious faith, have dedicated themselves to nurturing their spiritual, intellectual, and emotional growth, ultimately transforming their community into a harmonious and flourishing haven.</p>
+                    <p class="font-roboto text-sm">The parishioners, steeped in the teachings of Jesus Christ and the Sacred Scriptures, have learned to cultivate gratitude, forgiveness, and unwavering faith in the face of adversity. This collective sense of spiritual fulfillment has served as the cornerstone for the community's unwavering resilience and enduring love for one another.</p>
+                    <button class="bg-red-500 text-white rounded-full p-2 px-4 hover:bg-red-500/75 w-1/2 md:w-1/4">See more...</button>
+                </div>    
+            </div>
+        </div>
+    </section>
+
+    <!-- Discover Who we Are -->
+    <section id="about" class="mt-6 lg:h-screen">
+        <!-- Header -->
+        <div data-aos="zoom-in-up" data-aos-duration="1500" class="p-4 py-2 border-t-4 border-t-red-500 shadow-xl">
+            <h2 class="text-center font-bold font-rosario text-[30px] ">DISCOVER WHO WE ARE</h2>
+        </div>
+        <!-- Flex Container -->
+        <div class="mx-auto flex flex-col lg:justify-center lg:flex-row p-6 md:p-12 lg:space-x-4 space-y-4">
+            <!-- Left Item -->
+            <div class="flex flex-col space-y-4 lg:ml-12 lg:w-2/3">
+                <!-- About Us -->
+                <div data-aos="fade-right" data-aos-duration="1000" class="p-4 py-2 border-t-4 border-t-red-500 shadow-xl space-y-4">
+                    <h3 class="font-roboto font-bold text-[30px]">About Us</h3>
+                    <p class="font-roboto">St. John The Baptist Parish, situated in San Fernando, Camarines Sur, is a vibrant and spirited Catholic community, deeply rooted in the rich tradition of Filipino spirituality. Named after the illustrious biblical figure, St. John The Baptist Parish serves as a testament to the steadfast faith and devotion of its parishioners.</p>
+                </div>
+                <!-- Contact Us -->
+                <div data-aos="fade-right" data-aos-duration="1000" class="p-4 py-2 border-t-4 border-t-red-500 shadow-xl space-y-4">
+                    <h3 class="font-roboto font-bold text-[30px]">Contact Us</h3>
+                    <p>Send us a message</p>
+                    <form method="dialog">
+                        <div>
+                            <label for="name">Name</label> <br>
+                            <input type="text" id="name" name="name" class="w-full" required>
+                        </div>
+                        <div>
+                            <label for="email">Email</label> <br>
+                            <input type="email" id="email" name="email" class="w-full" required>
+                        </div>
+                        <div>
+                            <label for="Message">Message:</label> <br>
+                            <textarea name="Message" id="Message" cols="30" rows="10" class="w-full" required></textarea>
+                        </div>
+                        <div class="mt-2 flex justify-center">
+                            <input type="button" class="open-button bg-red-500 text-white p-2 px-4 hover:bg-red-500/75 w-1/2 md:w-1/4 cursor-pointer" value="Send">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Right Item -->
+            <div data-aos="fade-left" data-aos-duration="1000" class="mx-auto md:w-[88vw]">
+                <!-- GMaps Image -->
+                <div class="border-4 border-gray-400 lg:mt-24">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31028.893224027328!2d123.142144!3d13.5593984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a18bc2cdfddfd1%3A0xdad00e89c7281f4a!2sSan%20Fernando%20Parish%20Church!5e0!3m2!1sen!2sph!4v1699973451360!5m2!1sen!2sph" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-[500px]"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <dialog class="modal w-screen lg:w-[27%] p-2 lg:p-[0.5rem] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] rounded-md z-10" id="modal">
+        <div class="flex flex-col items-center justify-center space-y-4">
+            <h2 class="text-4xl font-bold font-roboto">Success!</h2>
+            <p class="text-center font-roboto">We’ve successfully received your message/inquiries. Thank you for messaging us!</p>
+        <button class="close-button rounded-md bg-green-800 text-white p-2 px-4 hover:bg-green-400 w-1/2 md:w-1/4 cursor-pointer">Continue</button>
+        </div>
+    </dialog>
+
+    <!-- Donation -->
+    <section id="donate" class="mt-6 lg:h-screen">
+        <!-- Header -->
+        <div data-aos="zoom-in-up" data-aos-duration="1500" class="p-4 py-2 border-t-4 border-t-red-500 shadow-xl">
+            <h2 class="text-center font-bold font-rosario text-[30px] ">DONATE TO THOSE WHO'RE IN NEED</h2>
+        </div>
+
+        <!-- Financial Drive -->
+        <div class="flex flex-col justify-center items-center h-full mx-auto lg:flex-row lg:space-x-4">
+            <div class="mt-24 border-t-4 border-black p-4 space-y-2 bg-white ">
+                <img src="../images/donation-pic.png" alt="#" class="w-[300px]">
+                <h3 class="font-roboto text-2xl text-center">Financial Drive</h3>
+                <div class="flex justify-center">
+                    <!-- Button -->
+                    <button class="open-payment rounded-lg bg-brightRed px-6 py-2 text-sm text-white hover:bg-brightRedLight ml-16">Donate Now</button>
+                    <!-- Share Button -->
+                    <a href="#"> <img src="../images/share-link.svg" alt="#" class="pl-12"> </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <dialog class="dmodal w-full lg:w-[27%] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] rounded-md z-10" id="dmodal">
+        <div class="flex flex-col justify-center space-y-4 rounded-lg overflow-hidden">
+            <div class="bg-[#2D2D2D] text-white font-roboto w-full">
+                <h2 class="pl-4 font-bold text-2xl ">SUPPORT THE PARISH FOR OTHERS</h2>
+                <p class="pl-4 text-lg">Leave a one-time donation</p>
+            </div>
+            <div class="font-roboto">
+                <form method="dmodal" class="px-4">
+                    <div>
+                        <label for="name">Full Name</label> <br>
+                        <input type="text" id="name" name="name" class="w-full" required placeholder="e.g Jose Rizal">
+                    </div>
+                    <div>
+                        <label for="email">Email Address</label> <br>
+                        <input type="email" id="email" name="email" class="w-full" required placeholder="e.g jose.rizal@example.com">
+                    </div>
+                    <div>
+                        <label for="names">I’m donating in the name of:</label> <br>
+                        <input type="name" id="names" name="names" class="w-full" required placeholder="e.g Jose Rizal">
+                    </div>
+                    <div>
+                        <label for="organization">Organization/Honoree name:</label> <br>
+                        <input type="name" id="organization" name="organization" class="w-full" required placeholder="e.g UNC">
+                    </div>
+                    <div>
+                        <label for="amount">Amount</label> <br>
+                        <input type="number" id="amount" name="names" class="w-full" required placeholder="P">
+                    </div>
+                    <div>
+                        <label for="Message">Remarks/Reference Number</label> <br>
+                        <textarea name="Message" id="Message" cols="10" rows="2" class="w-full" required></textarea>
+                    </div>
+                    <div>
+                        <p>GCASH:<span class="font-bold">09X-XXXX-XXXX</span></p>
+                        <p>BDO:<span class="font-bold">123 4574</span></p>
+                        <p>BPI:<span class="font-bold">552 152</span></p>
+                    </div>
+                    <div class="mt-2 flex justify-center">
+                        <button type="submit" ></button>
+                        <input type="button" class="close-payment rounded-md bg-[#2D2D2D] text-white p-2 px-4 hover:bg-green-400 my-2 cursor-pointer" value="Confirm Donation">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+    <!-- Payment -->
+    <dialog class="payment w-screen lg:w-[27%] p-2 lg:p-[0.5rem] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] rounded-md z-10" id="payment">
+        <div class="flex flex-col items-center justify-center space-y-4">
+            <h2 class="text-4xl font-bold font-roboto">Success!</h2>
+            <p class="text-center font-roboto">We’ve received your payment request. We would check our system for your Donation. Thank you so much!</p>
+        <button class="payment-close rounded-md bg-green-800 text-white p-2 px-4 hover:bg-green-400 w-1/2 md:w-1/4 cursor-pointer">Continue</button>
+        </div>
+    </dialog>
+
+    <!-- Events and Calendar -->
+    <section id="calendarevents" class="mt-6 lg:h-screen">
+        <!-- Header -->
+        <div data-aos="zoom-in-up" data-aos-duration="1500" class="p-4 py-2 border-t-4 border-t-red-500 shadow-xl">
+            <h2 class="text-center font-bold font-rosario text-[30px] ">EVENTS AND ACTIVITIES</h2>
+        </div>
+
+        <div data-aos="fade-down" data-aos-duration="1500" class="flex flex-col justify-center items-center h-[70vh] m-6 lg:my-0">
+            <div id="calendar"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="bg-[#2D2D2D] pt-4 space-y-4">
+        <div class="flex flex-row justify-between">
+            <div class="font-ruda text-white">
+                <h4 class="pl-4">OFFICE HOURS</h4>
+                <p class="pl-8">Weekdays: 9:00 AM - 6:00 PM </p>
+                <p class="pl-8">Weekends: Saturday  : 9:00 AM - 12:00 PM</p>
+            </div>
+            <div class="flex flex-row space-x-6 pr-6">
+                <a href="#"> <img src="/images/fb.png" alt="#"> </a>
+                <a href="#"> <img src="/images/twt.png" alt="#"> </a>
+                <a href="#"> <img src="/images/ig.png" alt="#"> </a>
+                <a href="#"> <img src="/images/yt.png" alt="#"> </a>
+            </div>
+        </div>
+        <div class="hidden md:flex flex-row justify-between mt-6 p-4">
+            <img src="/images/logo.png" alt="#" class="h-[80px]">
+            <img src="/images/logo.png" alt="#" class="h-[80px]">
+            <img src="/images/logo.png" alt="#" class="h-[80px]">
+            <img src="/images/logo.svg" alt="#" class="h-[80px]">
+            <img src="/images/logo.png" alt="#" class="h-[80px]">
+            <img src="/images/logo.png" alt="#" class="h-[80px]">
+            <img src="/images/logo.png" alt="#" class="h-[80px]">
+        </div>
+        <div class="flex flex-row justify-between">
+            <div class="font-ruda text-white">
+                <p class="pl-8">@2023 St. John The Baptish Parish - All rights reserved. </p>
+                
+            </div>
+            <div class="font-ruda text-white">
+                <p class="pr-8">@San Fernando, Camarines Sur, Philippines</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+    <!-- Add the evo-calendar.js for.. obviously, functionality! -->
+    <script src="https://cdn.jsdelivr.net/npm/evo-calendar@1.1.2/evo-calendar/js/evo-calendar.min.js"></script>
+
+    <script src="index.js"></script>
+
+    <script>
+        AOS.init();
+        $('#calendar').evoCalendar();
+        $('#calendar').evoCalendar('setTheme', 'Orange Coral');
+    </script>
+    
+</body>
+</html>
