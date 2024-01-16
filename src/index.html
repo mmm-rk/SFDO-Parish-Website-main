@@ -14,41 +14,45 @@
 
     <title>IParish</title>
 </head>
+
 <body>
     <!-- Navbar Section -->
-    <nav class="relative container mx-auto p-6">
-        <!-- Flex Container -->
-        <div class="flex items-center justify-between font-roboto ">
-            <!-- Logo -->
-            <img src="../images/logo.svg" alt="" class="w-16 h-16">
+    <div id="fixednavbar" class="bg-white">
+        <nav class="relative container mx-auto p-6">
+            <!-- Flex Container -->
+            <div class="flex items-center justify-between font-roboto ">
+                <!-- Logo -->
+                <img src="../images/logo.svg" alt="" class="w-16 h-16">
 
-            <!-- NavLinks -->
-            <div class="hidden md:flex space-x-6">
-                <a href="#home" class="text-red-600">Home</a>
-                <a href="#about" class="hover:text-red-600">About Us</a>
-                <a href="#news" class="hover:text-red-600">News</a>
-                <a href="#gallery" class="hover:text-red-600">Gallery</a>
-                <a href="#parishlife" class="hover:text-red-600">Parish Life</a>
-                <a href="#calendarevents" class="hover:text-red-600">Event Calendar</a>
+                <!-- NavLinks -->
+                <div class="hidden md:flex space-x-6">
+                    <a href="#home" class="text-red-600">Home</a>
+                    <a href="#about" class="hover:text-red-600">About Us</a>
+                    <a href="#news" class="hover:text-red-600">News</a>
+                    <a href="#gallery" class="hover:text-red-600">Gallery</a>
+                    <a href="#parishlife" class="hover:text-red-600">Parish Life</a>
+                    <a href="#calendarevents" class="hover:text-red-600">Event Calendar</a>
+                </div>
+
+                <!-- Button -->
+                <a href="#donate" class="hidden p-3 px-6 pt-2.5 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block">Donate</a>
+
+                <!-- Hamburger Icon -->
+                <button id="menu-btn" class="outline-none md:hidden">
+                    <svg class="w-6 h-6 text-slate-700 hover:text-red-600 "
+                            x-show="!showMenu"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                </button>
             </div>
-
-            <!-- Button -->
-            <a href="#donate" class="hidden p-3 px-6 pt-2.5 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block">Donate</a>
-
-            <!-- Hamburger Icon -->
-            <button id="menu-btn" class="outline-none md:hidden">
-                <svg class="w-6 h-6 text-slate-700 hover:text-red-600 "
-                        x-show="!showMenu"
-                        fill="none"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-            </button>
-    </nav>
+        </nav>
+    </div>
 
     <!-- Hero Section -->
     <secion id="home">
@@ -76,7 +80,7 @@
     <section id="news" class="lg:h-screen">
         <!-- Header -->
         <div data-aos="zoom-in-up" data-aos-duration="1500"  class="p-4 py-2 border-t-4 border-t-red-500 shadow-xl">
-            <h2 class="text-center font-bold font-rosario text-[30px] ">NEWS AND ANNOUNCEMENTS</h2>
+            <h2 class="text-center font-bold font-rosario text-[30px]">NEWS AND ANNOUNCEMENTS</h2>
         </div>
 
         <!-- Flex Container -->
@@ -208,7 +212,7 @@
     </section>
 
     <!-- Discover Parish Life -->
-    <section id="parishlife" class="lg:mt-0 mt-4">
+    <section id="parishlife" class="lg:h-screen">
         <div data-aos="zoom-in-up" data-aos-duration="1500" class="p-4 py-2 border-t-4 border-t-red-500 shadow-xl">
             <h2 class="text-center font-bold font-rosario text-[30px] ">DISCOVER OUR PARISH LIFE</h2>
         </div>
